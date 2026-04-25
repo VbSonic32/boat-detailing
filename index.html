@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lakeshore Detail Co. — Premium Boat Detailing | Conroe, TX</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="sytle.css" />
+	</head>
+	<body>
+		<!-- MOBILE MENU -->
+		<div class="mobile-menu" id="mobileMenu">
+			<a href="#services" onclick="closeMobileMenu()">Services</a>
+			<a href="#process" onclick="closeMobileMenu()">Our Process</a>
+			<a href="#gallery" onclick="closeMobileMenu()">Gallery</a>
+			<a href="#service-area" onclick="closeMobileMenu()">Service Area</a>
+			<a href="#contact" onclick="closeMobileMenu()" style="color: var(--gold)"
+				>Book Now</a
+			>
+		</div>
+
+		<!-- NAV -->
+		<nav class="nav" id="mainNav">
+			<div class="nav-logo">
+				Lakeshore <span>Detail</span> Co.
+				<small>Conroe, Texas · Lake Conroe</small>
+			</div>
+			<ul class="nav-links">
+				<li><a href="#services">Services</a></li>
+				<li><a href="#process">Process</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#service-area">Service Area</a></li>
+				<li><a href="#contact" class="nav-cta">Book Now</a></li>
+			</ul>
+			<div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()">
+				<span id="hb1"></span>
+				<span id="hb2"></span>
+				<span id="hb3"></span>
+			</div>
+		</nav>
+
+		<!-- HERO -->
+		<section class="hero">
+			<div class="hero-bg"></div>
+
+			<!-- Animated waves -->
+			<div class="hero-waves">
+				<div class="wave wave-1">
+					<svg
+						viewBox="0 0 1440 180"
+						preserveAspectRatio="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M0,80 C240,20 480,140 720,80 C960,20 1200,140 1440,80 L1440,180 L0,180 Z"
+							fill="rgba(201,168,76,1)"
+						/>
+					</svg>
+				</div>
+				<div class="wave wave-2">
+					<svg
+						viewBox="0 0 1440 180"
+						preserveAspectRatio="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M0,100 C300,40 600,160 900,100 C1100,60 1300,130 1440,100 L1440,180 L0,180 Z"
+							fill="rgba(26,58,110,1)"
+						/>
+					</svg>
+				</div>
+				<div class="wave wave-3">
+					<svg
+						viewBox="0 0 1440 180"
+						preserveAspectRatio="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M0,120 C360,60 720,160 1080,100 C1200,80 1360,140 1440,120 L1440,180 L0,180 Z"
+							fill="rgba(10,22,40,0.6)"
+						/>
+					</svg>
+				</div>
+			</div>
+
+			<!-- Particles -->
+			<div class="hero-particles" id="particles"></div>
+
+			<div class="hero-content">
+				<div class="hero-eyebrow">
+					<div class="hero-eyebrow-line"></div>
+					<span class="hero-eyebrow-text">Premium Boat Detailing · Conroe, TX</span>
+				</div>
+				<h1 class="hero-title zoomIn delay-2">
+					Your Vessel<br />
+					Deserves <em>Brilliance</em>
+				</h1>
+				<p class="hero-subtitle">
+					Expert marine detailing on Lake Conroe and surrounding waterways. We
+					restore, protect, and preserve your investment — right at your dock.
+				</p>
+				<div class="hero-actions">
+					<a href="#contact" class="btn-primary">
+						Schedule a Detail
+						<svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+							<path
+								d="M3 7h8M7.5 3.5L11 7l-3.5 3.5"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</a>
+					<a href="#services" class="btn-secondary"> View Services </a>
+				</div>
+			</div>
+
+			<div class="hero-mosaic">
+				<div class="mosaic-tile tile-1"></div>
+				<div class="mosaic-tile tile-2"></div>
+				<div class="mosaic-tile tile-3"></div>
+				<div class="mosaic-tile tile-4"></div>
+				<div class="mosaic-tile tile-badge">
+					<div class="hero-badge-inner">
+						<span class="num">12+</span>
+						<span class="label">Years of<br />Excellence</span>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="hero-scroll"
+				onclick="
+					document.getElementById('about').scrollIntoView({ behavior: 'smooth' })
+				"
+			>
+				<div class="scroll-line"></div>
+				<span>Scroll</span>
+			</div>
+		</section>
+
+		<!-- ABOUT STRIP -->
+		<div class="about-strip" id="about">
+			<div class="about-strip-inner">
+				<div class="strip-item reveal">
+					<div class="strip-num">500+</div>
+					<div class="strip-label">Boats Detailed</div>
+				</div>
+				<div class="strip-divider"></div>
+				<div class="strip-item reveal reveal-delay-1">
+					<div class="strip-num">12+</div>
+					<div class="strip-label">Years Experience</div>
+				</div>
+				<div class="strip-divider"></div>
+				<div class="strip-item reveal reveal-delay-2">
+					<div class="strip-num">5★</div>
+					<div class="strip-label">Average Rating</div>
+				</div>
+				<div class="strip-divider"></div>
+				<div class="strip-item reveal reveal-delay-3">
+					<div class="strip-num">100%</div>
+					<div class="strip-label">Mobile Service</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SERVICES -->
+		<section class="services" id="services">
+			<div class="section-inner">
+				<div class="services-header">
+					<div>
+						<div class="section-label reveal">
+							<div class="section-label-line"></div>
+							<span class="section-label-text">What We Offer</span>
+						</div>
+						<h2 class="section-heading reveal reveal-delay-1">
+							Detailing <em>Services</em><br />Built for Boats
+						</h2>
+					</div>
+					<p class="section-body reveal reveal-delay-2">
+						From quick maintenance washes to full ceramic coating packages — every
+						service is performed by certified marine detailing professionals.
+					</p>
+				</div>
+
+				<div class="services-grid">
+					<div class="service-card reveal">
+						<span class="service-num">01</span>
+						<svg
+							class="service-icon"
+							viewBox="0 0 48 48"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M24 8C24 8 12 20 12 28C12 34.627 17.373 40 24 40C30.627 40 36 34.627 36 28C36 20 24 8 24 8Z"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M18 20L20 24L24 26L20 28L18 32L16 28L12 26L16 24L18 20Z"
+								fill="currentColor"
+								stroke="none"
+							/>
+						</svg>
+						<h3 class="service-title">Full Detail Wash</h3>
+						<p class="service-desc">
+							Complete exterior wash, clay bar treatment, hand wax, and interior
+							wipe-down. Perfect for seasonal refresh or post-trip maintenance.
+						</p>
+						<a href="#contact" class="service-link">
+							Get a Quote
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path
+									d="M2 6h8M6.5 2.5L10 6l-3.5 3.5"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+
+					<div class="service-card reveal reveal-delay-1">
+						<span class="service-num">02</span>
+						<svg
+							class="service-icon"
+							viewBox="0 0 48 48"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M24 6L10 12V22C10 31.33 15.93 40.04 24 42C32.07 40.04 38 31.33 38 22V12L24 6Z"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M24 16V28M18 22H30"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path
+								d="M20 18L28 26M28 18L20 26"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+						</svg>
+						<h3 class="service-title">Ceramic Coating</h3>
+						<p class="service-desc">
+							Professional-grade nano ceramic protection that bonds to your gelcoat,
+							delivering years of UV resistance, water beading, and brilliant shine.
+						</p>
+						<a href="#contact" class="service-link">
+							Get a Quote
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path
+									d="M2 6h8M6.5 2.5L10 6l-3.5 3.5"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+
+					<div class="service-card reveal reveal-delay-2">
+						<span class="service-num">03</span>
+						<svg
+							class="service-icon"
+							viewBox="0 0 48 48"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								cx="24"
+								cy="24"
+								r="14"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-dasharray="6 4"
+							/>
+							<circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2" />
+							<path
+								d="M6 24C6 14.0589 14.0589 6 24 6"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path
+								d="M42 24C42 33.9411 33.9411 42 24 42"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+						</svg>
+						<h3 class="service-title">Oxidation Removal</h3>
+						<p class="service-desc">
+							Heavy-cut compound polishing to restore chalky, faded gelcoat to its
+							original gloss. We bring dull boats back to life.
+						</p>
+						<a href="#contact" class="service-link">
+							Get a Quote
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path
+									d="M2 6h8M6.5 2.5L10 6l-3.5 3.5"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+
+					<div class="service-card reveal reveal-delay-1">
+						<span class="service-num">04</span>
+						<svg
+							class="service-icon"
+							viewBox="0 0 48 48"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2" />
+							<circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2" />
+							<path
+								d="M24 8V20M24 28V40M8 24H20M28 24H40M12.686 12.686L19.757 19.757M28.243 28.243L35.314 35.314M12.686 35.314L19.757 28.243M28.243 19.757L35.314 12.686"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path
+								d="M24 4V8M24 40V44M4 24H8M40 24H44"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path
+								d="M9.858 9.858L12.686 12.686M35.314 35.314L38.142 38.142M9.858 38.142L12.686 35.314M35.314 12.686L38.142 9.858"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+						</svg>
+						<h3 class="service-title">Interior Detailing</h3>
+						<p class="service-desc">
+							Deep clean of upholstery, carpet extraction, vinyl conditioning, and
+							mold/mildew treatment. Fresh from bow to stern.
+						</p>
+						<a href="#contact" class="service-link">
+							Get a Quote
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path
+									d="M2 6h8M6.5 2.5L10 6l-3.5 3.5"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+
+					<div class="service-card reveal reveal-delay-2">
+						<span class="service-num">05</span>
+						<svg
+							class="service-icon"
+							viewBox="0 0 48 48"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M4 16C16 16 28 16 44 16C44 16 42 32 28 32C18 32 10 24 4 16Z"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M8 40H40M16 36H32"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path
+								d="M30 10V20M25 15H35"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path
+								d="M27 12L33 18M33 12L27 18"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+						</svg>
+						<h3 class="service-title">Hull Polishing</h3>
+						<p class="service-desc">
+							Multi-stage machine polish of the hull, removing waterline stains,
+							scuffs, and spider-web swirls for a mirror-like finish below the rub
+							rail.
+						</p>
+						<a href="#contact" class="service-link">
+							Get a Quote
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path
+									d="M2 6h8M6.5 2.5L10 6l-3.5 3.5"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+
+					<div class="service-card reveal reveal-delay-3">
+						<span class="service-num">06</span>
+						<svg
+							class="service-icon"
+							viewBox="0 0 48 48"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect
+								x="14"
+								y="12"
+								width="20"
+								height="26"
+								rx="2"
+								stroke="currentColor"
+								stroke-width="2"
+							/>
+							<path
+								d="M19 8V16M29 8V16"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path d="M14 20H34" stroke="currentColor" stroke-width="2" />
+							<path
+								d="M20 26H28M20 32H24"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path
+								d="M6 24C6 14.0589 14.0589 6 24 6M42 24C42 33.9411 33.9411 42 24 42"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path
+								d="M24 6H18M24 6V12M24 42H30M24 42V36"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+						</svg>
+						<h3 class="service-title">Maintenance Plans</h3>
+						<p class="service-desc">
+							Monthly or quarterly recurring detailing packages with priority
+							scheduling. Keep your boat show-ready all season long without the hassle.
+						</p>
+						<a href="#contact" class="service-link">
+							Get a Quote
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+								<path
+									d="M2 6h8M6.5 2.5L10 6l-3.5 3.5"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PROCESS -->
+		<section class="process" id="process">
+			<div class="section-inner">
+				<div class="process-header">
+					<div class="section-label reveal">
+						<div class="section-label-line"></div>
+						<span class="section-label-text">How It Works</span>
+					</div>
+					<h2 class="section-heading light reveal reveal-delay-1">
+						Simple as <em>Four Steps</em>
+					</h2>
+					<p class="section-body reveal reveal-delay-2">
+						We come to you — at your dock, marina, or driveway. No trailering needed.
+					</p>
+				</div>
+
+				<div class="process-steps">
+					<div class="process-step reveal">
+						<div class="step-num">1</div>
+						<h3 class="step-title">Book Online</h3>
+						<p class="step-desc">
+							Request your service via our form or call us. We'll confirm your slot
+							within 24 hours.
+						</p>
+					</div>
+					<div class="process-step reveal reveal-delay-1">
+						<div class="step-num">2</div>
+						<h3 class="step-title">Free Assessment</h3>
+						<p class="step-desc">
+							Our technician inspects your vessel and recommends the right package for
+							your needs.
+						</p>
+					</div>
+					<div class="process-step reveal reveal-delay-2">
+						<div class="step-num">3</div>
+						<h3 class="step-title">We Detail</h3>
+						<p class="step-desc">
+							Our team arrives fully equipped and completes the job professionally,
+							on-site.
+						</p>
+					</div>
+					<div class="process-step reveal reveal-delay-3">
+						<div class="step-num">4</div>
+						<h3 class="step-title">Enjoy the Water</h3>
+						<p class="step-desc">
+							Inspect your vessel, sign off, and hit Lake Conroe looking absolutely
+							immaculate.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GALLERY -->
+		<section class="gallery" id="gallery">
+			<div class="section-inner">
+				<div class="gallery-header">
+					<div>
+						<div class="section-label reveal">
+							<div class="section-label-line"></div>
+							<span class="section-label-text">Our Work</span>
+						</div>
+						<h2 class="section-heading reveal reveal-delay-1">
+							Results That <em>Speak</em>
+						</h2>
+					</div>
+					<a
+						href="#contact"
+						class="btn-primary reveal reveal-delay-2"
+						style="align-self: flex-end"
+						>Get This For Your Boat</a
+					>
+				</div>
+
+				<div class="gallery-grid">
+					<div class="gallery-item reveal">
+						<img
+							src="images/Full Detail Wash.png"
+							alt="Professional Boat Wash"
+							loading="lazy"
+						/>
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item reveal reveal-delay-1">
+						<img
+							src="images/Ceramic Coating.png"
+							alt="Ceramic Coating & Surface Protection"
+							loading="lazy"
+						/>
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item reveal reveal-delay-2">
+						<img
+							src="images/Oxidation Removal.png"
+							alt="Machine Polishing & Oxidation Removal"
+							loading="lazy"
+						/>
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item reveal reveal-delay-3">
+						<img
+							src="images/Interior Detailing.png"
+							alt="Luxury Interior Detailing"
+							loading="lazy"
+						/>
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item reveal reveal-delay-4">
+						<img
+							src="images/deck-cleaning.png"
+							alt="Mirror Finish Hull Restoration"
+							loading="lazy"
+						/>
+						<div class="gallery-overlay"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- TESTIMONIALS -->
+		<section class="testimonials">
+			<div class="section-inner">
+				<div class="testimonials-header">
+					<div class="section-label reveal">
+						<div class="section-label-line"></div>
+						<span class="section-label-text">Reviews</span>
+					</div>
+					<h2 class="section-heading reveal reveal-delay-1">
+						What Lake Conroe <em>Boaters</em> Say
+					</h2>
+				</div>
+
+				<div class="testimonials-grid">
+					<div class="testimonial-card reveal">
+						<div class="stars">
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+						</div>
+						<p class="testimonial-text">
+							"Absolutely incredible work. My Sea Ray looked brand new after their full
+							detail package. The oxidation was completely gone and the hull shines
+							like a mirror. Highly recommend to any Lake Conroe boat owner."
+						</p>
+						<div class="testimonial-author">
+							<div class="author-avatar">R</div>
+							<div>
+								<div class="author-name">Robert M.</div>
+								<div class="author-title">Sea Ray 310 Owner · Conroe, TX</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="testimonial-card reveal reveal-delay-1">
+						<div class="stars">
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+						</div>
+						<p class="testimonial-text">
+							"The team came right to our slip at the marina and knocked out the
+							ceramic coating in one day. The water just beads off now. Worth every
+							penny and the guys were incredibly professional."
+						</p>
+						<div class="testimonial-author">
+							<div class="author-avatar">J</div>
+							<div>
+								<div class="author-name">Jennifer L.</div>
+								<div class="author-title">
+									Mastercraft NXT22 Owner · The Woodlands, TX
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="testimonial-card reveal reveal-delay-2">
+						<div class="stars">
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+							<svg class="star" viewBox="0 0 24 24">
+								<path
+									d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+								/>
+							</svg>
+						</div>
+						<p class="testimonial-text">
+							"Been using Lakeshore Detail for two seasons now on the quarterly plan.
+							Easiest thing in the world — they show up, they do great work, and I
+							don't have to think about it. My pontoon has never looked this good."
+						</p>
+						<div class="testimonial-author">
+							<div class="author-avatar">D</div>
+							<div>
+								<div class="author-name">David K.</div>
+								<div class="author-title">Bennington 25RSB Owner · Willis, TX</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SERVICE AREA -->
+		<section class="service-area" id="service-area">
+			<div class="section-inner">
+				<div class="service-area-inner">
+					<div>
+						<div class="section-label reveal">
+							<div class="section-label-line"></div>
+							<span class="section-label-text">Coverage</span>
+						</div>
+						<h2 class="section-heading light reveal reveal-delay-1">
+							We Come <em>To You</em>
+						</h2>
+						<p
+							class="section-body reveal reveal-delay-2"
+							style="color: var(--mist); margin-top: 16px"
+						>
+							Fully mobile operation serving Lake Conroe and the greater Montgomery
+							County area. We detail at your dock, marina, or driveway — wherever your
+							boat lives.
+						</p>
+						<div class="area-list reveal reveal-delay-3">
+							<div class="area-item">
+								<div class="area-dot"></div>
+								Conroe
+							</div>
+							<div class="area-item">
+								<div class="area-dot"></div>
+								Montgomery
+							</div>
+							<div class="area-item">
+								<div class="area-dot"></div>
+								The Woodlands
+							</div>
+							<div class="area-item">
+								<div class="area-dot"></div>
+								Willis
+							</div>
+							<div class="area-item">
+								<div class="area-dot"></div>
+								Spring
+							</div>
+							<div class="area-item">
+								<div class="area-dot"></div>
+								Magnolia
+							</div>
+							<div class="area-item">
+								<div class="area-dot"></div>
+								Huntsville
+							</div>
+							<div class="area-item">
+								<div class="area-dot"></div>
+								Cut and Shoot
+							</div>
+						</div>
+					</div>
+
+					<div class="area-map reveal reveal-delay-2">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55097.38531770932!2d-95.645719!3d30.40523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864722941031b2ef%3A0xc3403a743b59302!2sLake%20Conroe!5e0!3m2!1sen!2sus!4v1713987000000!5m2!1sen!2sus"
+							width="100%"
+							height="100%"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA / CONTACT -->
+		<section class="cta" id="contact">
+			<div class="section-inner" style="position: relative; z-index: 1">
+				<div class="section-label reveal" style="justify-content: center">
+					<div class="section-label-line"></div>
+					<span class="section-label-text">Get in Touch</span>
+				</div>
+				<h2 class="cta-heading reveal reveal-delay-1">
+					Ready to Make Your<br />
+					Boat <em>Shine?</em>
+				</h2>
+				<p class="cta-sub reveal reveal-delay-2">
+					Request a free quote and we'll get back to you within one business day. No
+					pressure, no obligation.
+				</p>
+
+				<div style="max-width: 560px; margin: 0 auto" class="reveal reveal-delay-2">
+					<form
+						id="contactForm"
+						style="display: grid; gap: 16px"
+						onsubmit="handleSubmit(event)"
+					>
+						<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
+							<div>
+								<input
+									type="text"
+									id="fname"
+									placeholder="Your Name"
+									required
+									style="
+										width: 100%;
+										padding: 14px 16px;
+										border: 1px solid rgba(10, 22, 40, 0.15);
+										border-radius: 2px;
+										font-family: var(--ff-body);
+										font-size: 0.9rem;
+										background: var(--white);
+										color: var(--text);
+										outline: none;
+										transition: border-color 0.2s ease;
+									"
+									onfocus="this.style.borderColor = 'var(--gold)'"
+									onblur="this.style.borderColor = 'rgba(10,22,40,0.15)'"
+								/>
+							</div>
+							<div>
+								<input
+									type="tel"
+									id="phone"
+									placeholder="Phone Number"
+									style="
+										width: 100%;
+										padding: 14px 16px;
+										border: 1px solid rgba(10, 22, 40, 0.15);
+										border-radius: 2px;
+										font-family: var(--ff-body);
+										font-size: 0.9rem;
+										background: var(--white);
+										color: var(--text);
+										outline: none;
+										transition: border-color 0.2s ease;
+									"
+									onfocus="this.style.borderColor = 'var(--gold)'"
+									onblur="this.style.borderColor = 'rgba(10,22,40,0.15)'"
+								/>
+							</div>
+						</div>
+						<input
+							type="email"
+							id="email"
+							placeholder="Email Address"
+							required
+							style="
+								width: 100%;
+								padding: 14px 16px;
+								border: 1px solid rgba(10, 22, 40, 0.15);
+								border-radius: 2px;
+								font-family: var(--ff-body);
+								font-size: 0.9rem;
+								background: var(--white);
+								color: var(--text);
+								outline: none;
+								transition: border-color 0.2s ease;
+							"
+							onfocus="this.style.borderColor = 'var(--gold)'"
+							onblur="this.style.borderColor = 'rgba(10,22,40,0.15)'"
+						/>
+						<select
+							id="service"
+							style="
+								width: 100%;
+								padding: 14px 16px;
+								border: 1px solid rgba(10, 22, 40, 0.15);
+								border-radius: 2px;
+								font-family: var(--ff-body);
+								font-size: 0.9rem;
+								background: var(--white);
+								color: var(--text-muted);
+								outline: none;
+								cursor: pointer;
+								appearance: none;
+							"
+						>
+							<option value="" disabled selected>Select a Service</option>
+							<option>Full Detail Wash</option>
+							<option>Ceramic Coating</option>
+							<option>Oxidation Removal</option>
+							<option>Interior Detailing</option>
+							<option>Hull Polishing</option>
+							<option>Maintenance Plan</option>
+							<option>Not Sure — Need a Quote</option>
+						</select>
+						<textarea
+							id="message"
+							placeholder="Boat type, size, current condition, location…"
+							rows="3"
+							style="
+								width: 100%;
+								padding: 14px 16px;
+								border: 1px solid rgba(10, 22, 40, 0.15);
+								border-radius: 2px;
+								font-family: var(--ff-body);
+								font-size: 0.9rem;
+								background: var(--white);
+								color: var(--text);
+								outline: none;
+								resize: vertical;
+								transition: border-color 0.2s ease;
+							"
+							onfocus="this.style.borderColor = 'var(--gold)'"
+							onblur="this.style.borderColor = 'rgba(10,22,40,0.15)'"
+						></textarea>
+						<button
+							type="submit"
+							class="btn-primary"
+							style="width: 100%; justify-content: center; font-size: 0.875rem"
+						>
+							Send Request — We'll Reply Within 24 Hours
+						</button>
+						<p
+							id="formMsg"
+							style="
+								display: none;
+								color: var(--navy);
+								font-weight: 500;
+								font-size: 0.9rem;
+								text-align: center;
+							"
+						></p>
+					</form>
+				</div>
+
+				<div class="cta-contact reveal reveal-delay-3">
+					<div class="contact-item">
+						<span class="contact-item-label">Call or Text</span>
+						<a class="contact-item-value" href="tel:+19365550123">(936) 555-0123</a>
+					</div>
+					<div class="contact-divider"></div>
+					<div class="contact-item">
+						<span class="contact-item-label">Email</span>
+						<a class="contact-item-value" href="mailto:hello@lakeshoredetail.com"
+							>hello@lakeshoredetail.com</a
+						>
+					</div>
+					<div class="contact-divider"></div>
+					<div class="contact-item">
+						<span class="contact-item-label">Hours</span>
+						<span class="contact-item-value">Mon–Sat 7am–6pm</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer-inner">
+				<div class="footer-top">
+					<div>
+						<div class="footer-brand-name">Lakeshore <span>Detail</span> Co.</div>
+						<div class="footer-brand-tag">Conroe, Texas · Est. 2012</div>
+						<p class="footer-brand-desc">
+							Premium mobile boat detailing serving Lake Conroe and Montgomery County.
+							We protect your investment so you can focus on the water.
+						</p>
+					</div>
+					<div class="footer-col">
+						<div class="footer-col-title">Services</div>
+						<ul>
+							<li><a href="#services">Full Detail Wash</a></li>
+							<li><a href="#services">Ceramic Coating</a></li>
+							<li><a href="#services">Oxidation Removal</a></li>
+							<li><a href="#services">Interior Detailing</a></li>
+							<li><a href="#services">Hull Polishing</a></li>
+							<li><a href="#services">Maintenance Plans</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<div class="footer-col-title">Contact</div>
+						<ul>
+							<li><a href="tel:+19365550123">(936) 555-0123</a></li>
+							<li>
+								<a href="mailto:hello@lakeshoredetail.com">hello@lakeshoredetail.com</a>
+							</li>
+							<li><a href="#service-area">Service Area Map</a></li>
+							<li><a href="#contact">Book Online</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p class="footer-copy">
+						© 2026 Lakeshore Detail Co. All rights reserved. Conroe, TX.
+					</p>
+					<div class="footer-legal">
+						<a href="#">Privacy Policy</a>
+						<a href="#">Terms</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
